@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG IN</title>
+    <link rel="stylesheet" href="login.css">
+    <script defer src="login.js"></script>
+<style>
+
+
+body{
+
+background-image: url(https://media.istockphoto.com/id/1822889082/vector/luxury-background-curved-shapes-lines-lights-and-shadows.jpg?s=612x612&w=0&k=20&c=jfMsPDaJITe72HyX6w2qQP7yT8rNJQlL4tUEYpttMMI=);
+}
+</style>
+</head>
+<body>
+    <div class="fade-out" id="fade-out"></div>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form id="sign-up-form">
+                <h1>Create Account</h1>
+              
+                <span>or use your email for registration</span>
+                <br>
+<br> 
+                <input type="text" placeholder="Name" required />
+                <input type="email" placeholder="Email" required />
+                <input type="password" placeholder="Password" required />
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form id="sign-in-form">
+                <h1>Sign in</h1>
+               
+                <span>by using your account details to enter.</span>
+                <br>
+<br> 
+                <input type="email" placeholder="Email" required />
+                <input type="password" placeholder="Password" required />
+                <a href="index2.html">Forgot your password? - Enter As Guest</a>
+                <button type="submit">Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Log Into The Quantum Realm</h1>
+                    <p>Enter your details and explore the console free exclusives.</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('sign-up-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('fade-out').classList.add('active');
+            setTimeout(() => {
+                window.location.href = 'index2.html';
+            }, 500); // Delay should match the transition duration
+        });
+
+        document.getElementById('sign-in-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('fade-out').classList.add('active');
+            setTimeout(() => {
+                window.location.href = 'index2.html';
+            }, 500); // Delay should match the transition duration
+        });
+    </script>
+</body>
+</html>
+<br>
+<br>
+
+<br>
+
+<br>
+<br>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Games - Terms and Conditions</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            background-color: transparent; /* No background color */
+            height: 100%; /* Ensure body takes full height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Align items in a column */
+        }
+
+        .terms-btn {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .terms-btn:hover {
+            background-color: #145dbf;
+        }
+
+        .terms-box {
+            width: 80%;
+            max-width: 600px;
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            display: none; /* Initially hidden */
+            font-size: 14px;
+            line-height: 1.6;
+            color: #000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for effect */
+        }
+
+        .terms-box p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button class="terms-btn" id="termsBtn">Terms and Conditions</button>
+    <div class="terms-box" id="termsBox">
+        
+<h1>Terms and Conditions for Quantum Games</h1>
+<p><strong>Effective Date:</strong> [Forever]</p>
+
+<h2>1. Acceptance of Terms</h2>
+<p>By using Quantum Games’ website and services, you agree to these Terms and Conditions. If you do not agree, please do not use our platform.</p>
+
+<h2>2. Eligibility</h2>
+<p>You must be at least 15 years old to use this platform. Users under 18 require parental consent.</p>
+
+<h2>3. Account Security</h2>
+<p>You are responsible for your account’s security. Notify us immediately of any unauthorized access. We are not liable for losses from such breaches.</p>
+
+<h2>4. Game Purchases</h2>
+<p>All sales are final. Users receive a limited license to use purchased content. Redistribution or resale is prohibited.</p>
+
+<h2>5. Payment</h2>
+<p>Payments are processed through third-party services. Prices may change without notice, and we are not responsible for pricing errors.</p>
+
+<h2>6. Intellectual Property</h2>
+<p>All content on Quantum Games is protected by intellectual property laws. Unauthorized use is prohibited.</p>
+
+<h2>7. User Conduct</h2>
+<p>You agree to use the platform legally and responsibly. Prohibited activities include hacking, posting offensive content, and fraud.</p>
+
+<h2>8. Termination</h2>
+<p>We may terminate your account without notice for violations of these terms.</p>
+
+<h2>9. Limitation of Liability</h2>
+<p>Our services are provided "as-is." We are not liable for any damages arising from your use of the platform.</p>
+
+<h2>10. Governing Law</h2>
+<p>These terms are governed by the laws of [The Gaming Inudustry].</p>
+
+<h2>11. Contact Information</h2>
+<p>For questions, contact us at [0476783929840 or QG@gmail.com].</p>
+
+<p>By using Quantum Games, you acknowledge that you have read and agree to these Terms and Conditions.</p>
+    </div>
+
+    <script>
+        document.getElementById("termsBtn").addEventListener("click", function() {
+            const termsBox = document.getElementById("termsBox");
+            if (termsBox.style.display === "none" || termsBox.style.display === "") {
+                termsBox.style.display = "block";
+                this.textContent = "Hide Terms and Conditions";
+            } else {
+                termsBox.style.display = "none";
+                this.textContent = "Terms and Conditions";
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
